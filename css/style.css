@@ -106,7 +106,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/Screenshot_20220829-195641_Instagram.jpg");
+    ,url("../img/Screenshot_20220829-195641_Instagram.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -128,7 +128,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/receiving\ 3.jpeg");
+    ,url("../img/receiving\ 3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -150,7 +150,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/Check\ In\ 3.jpg");
+    ,url("../img/Check\ In\ 3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -172,7 +172,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/Put\ Away.jpg");
+    ,url("../img/Put\ Away.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -194,7 +194,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/Picking.jpg");
+    ,url("../img/Picking.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -216,7 +216,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/received_1744269352604071.webp");
+    ,url("../img/received_1744269352604071.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -269,7 +269,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/recepcion\ 2.png");
+    ,url("../img/recepcion\ 2.png");
 
 }
 
@@ -279,7 +279,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/check\ in\ 2.jpg");
+    ,url("../img/check\ in\ 2.jpg");
 }
 
 .carta:nth-child(3) {
@@ -288,7 +288,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/put\ away\ 2.jpg");
+    ,url("../img/put\ away\ 2.jpg");
 }
 
     .carta:nth-child(4) {
@@ -297,7 +297,7 @@ header a:hover{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/picking\ 2.jpg");
+        ,url("../img/picking\ 2.jpg");
     }
 
         .carta:nth-child(5) {
@@ -306,7 +306,7 @@ header a:hover{
                 rgba(0,0,0,0.5),
                 rgba(0,0,0,0.5)
             )
-            ,url("/img/packing\ 2.jpg");
+            ,url("../img/packing\ 2.jpg");
 
 }
 
@@ -387,7 +387,7 @@ footer .container{
     }
 
     #somos-proya .img-container{
-        background-image: url("/img/3397794h900.webp");
+        background-image: url("../img/3397794h900.webp");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -427,7 +427,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/recepcion\ 2.png");
+        ,url("../img/recepcion\ 2.png");
 
     }
 
@@ -437,7 +437,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/check\ in\ 2.jpg");
+        ,url("../img/check\ in\ 2.jpg");
     }
 
     .carta:nth-child(3){
@@ -446,7 +446,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/put\ away\ 2.jpg");
+        ,url("../img/put\ away\ 2.jpg");
 
     }
     .carta:nth-child(4){
@@ -455,7 +455,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/picking\ 2.jpeg");
+        ,url("../img/picking\ 2.jpeg");
 
     }
     .carta:nth-child(5){
@@ -464,7 +464,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/packing\ 2.jpg");
+        ,url("../img/packing\ 2.jpg");
 
     }
 
@@ -505,7 +505,7 @@ footer .container{
         justify-content: center;
     }
     #somos-proya .img-container {
-        background-image: url("/img/3397794h900.webp");
+        background-image: url("../img/3397794h900.webp");
         background-size: cover;
         background-position: center center;
     }
