@@ -1,7 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -10,6 +6,11 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+
+$colordeltitulo: rgb(255, 255, 255);
+$colordelnav: linear-gradient(rgb(255, 230, 0), black);;
+@import 'header';
+@import 'responsive';
 
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
@@ -38,63 +39,18 @@ button:hover{
     margin: auto;
 }
 
-.color-acento{ color:rgb(0, 0, 0); }
-
-header{
-     background: linear-gradient(rgb(255, 230, 0), black);
-    padding: 10px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: black
-
-}
-.logo2 {
-    animation-name: logo;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 0;
-    animation-timing-function:ease-out;
-    }
-   
+.color-acento {
+     color:rgb(0, 0, 0);
+     text-align: center;
+     }
+  
     @keyframes logo {
         0%{
             transform: scale(.3);
         }
     }
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: rgb(255, 255, 255);
-}
-
-#hero{
+ #hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,10 +66,9 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-#hero h1{
-    color: white;
+    h1 {
+        color: $colordeltitulo
+    }
 }
 
 #hero2{
@@ -234,6 +189,13 @@ header a:hover{
     text-align: center;
     padding: 200px 12px;
 }
+#somos-proya .texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
 
 #nuestros-procesos{
     background-color: rgb(30,30,30);
@@ -346,175 +308,32 @@ footer .container{
     align-items: flex-end;
 }
 
-@media (min-width: 850px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #somos-proya .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-proya .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-proya h2{
-        margin-top: 0px;
-    }
-
-    #somos-proya .img-container{
-        background-image: url("../img/3397794h900.webp");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 900px; 
-    }
-
-    #nuestros-procesos .procesos{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-procesos p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-procesos h2{
-        font-size: 4em;
-    }
-
-    #nuestros-procesos h3{
-        margin-top: 0;
-    }
-
-    #nuestros-procesos .carta{
-        padding: 50px;
-        background-size: 100% 150px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../img/recepcion\ 2.png");
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../img/check\ in\ 2.jpg");
-    }
-
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../img/put\ away\ 2.jpg");
-
-    }
-    .carta:nth-child(4){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../img/picking\ 2.jpeg");
-
-    }
-    .carta:nth-child(5){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../img/packing\ 2.jpg");
-
-    }
-
-    #final h2{
-        font-size: 5em;
-    }
-
-    #final button{
-        font-size: 2em;
-    }
-
-    footer .container{
-        justify-content: flex-end;
-    }
-}
-
-@media (min-width: 720px) {
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header .nav {
-        flex-direction: row;
-        align-items: center;
-        padding-right: 20px;
-    }
-    #somos-proya.container {
-        display: flex;
-        justify-content: center;
-    }
-    #somos-proya.texto {
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding: 0px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #somos-proya .img-container {
-        background-image: url("../img/3397794h900.webp");
-        background-size: cover;
-        background-position: center center;
-    }
-    #nuestros-procesos .procesos {
-        display: flex;
-        justify-content: center;
-    }
-    #nuestros-procesos .p {
-        display: block;
-        margin-bottom: 30px;
-    }
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }  
+  .buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #ffee00;
+    color: #000000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+  
